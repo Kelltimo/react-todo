@@ -16,7 +16,7 @@ require('style!css!foundation-sites/dist/foundation.min.css');
 $(document).foundation();
 
 // Load CSS
-require('style!css!applicationStyle');
+require('style!css!sass!applicationStyles');
 
 ReactDOM.render(<Router history={hashHistory}>
   <Route path="/" component={Main}>
