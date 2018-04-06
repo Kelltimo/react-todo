@@ -1,12 +1,2 @@
-$space-large: 2.5rem;
-$color-changer: #555;
-
-.page-title {
-  margin-top: $space-large;
-  margin-bottom: $space-large;
-  color: $color-changer;
-}
-
-input[type=search] {
-  box-shadow: none;
-}
+@import "base/variables";
+@import "components/navigation"; 
