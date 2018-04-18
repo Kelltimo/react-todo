@@ -5,6 +5,8 @@ var CountdownForm = React.createClass({
     e.preventDefault();
     var strSeconds = this.refs.seconds.value;
 
+    console.log
+
     // to prevent against alpha characters, numbers only
     if (strSeconds.match(/^[0-9]*$/)) { //start matching 0-9 character with carrot, and close with a number by $
       this.refs.seconds.value = '';

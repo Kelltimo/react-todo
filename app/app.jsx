@@ -13,7 +13,6 @@ var Countdown = require('Countdown');
 var TimerButton = require('TimerButton');
 
 // Load foundations
-require('style!css!foundation-sites/dist/css/foundation.min.css');
 $(document).foundation();
 
 // Load CSS
