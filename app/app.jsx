@@ -6,11 +6,8 @@ var {
   IndexRoute,
   hashHistory
 } = require('react-router');
-var Main = require('Main');
-var Nav = require('Nav');
-var Timer = require('Timer');
-var Countdown = require('Countdown');
-var TimerButton = require('TimerButton');
+
+var TodoApp = require('TodoApp');
 
 // Load foundations
 $(document).foundation();
@@ -20,10 +17,4 @@ require('style!css!sass!applicationStyles');
 
 //Define proper routes
 
-ReactDOM.render(<Router history={hashHistory}>
-  <Route path="/" component={Main}>
-    <Route path="countdown" component={Countdown}/>
-    <IndexRoute component={Timer}/>
-  </Route>
-
-</Router>, document.getElementById('app'));
+ReactDOM.render(<TodoApp/>, document.getElementById('app'));
