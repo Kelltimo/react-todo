@@ -1,6 +1,8 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-
+var {
+  Provider
+} = require('react-redux');
 var {
   Route,
   Router,
@@ -29,4 +31,4 @@ require('style!css!sass!applicationStyles');
 
 //Define proper routes
 
-ReactDOM.render(<TodoApp/>, document.getElementById('app'));
+ReactDOM.render(<Provider store={store}><TodoApp/></Provider>, document.getElementById('app'));
